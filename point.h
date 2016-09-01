@@ -43,6 +43,11 @@ class Point {
          * Compute the distance between two points.
          */
         double distance(Point givenPoint);
+
+        /**
+         * Return the midpoint of a segment.
+         */
+        Point getMidpoint(Point givenPoint);
 };
 
 #endif 

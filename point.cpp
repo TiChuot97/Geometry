@@ -53,3 +53,13 @@ bool Point::isInMiddle(Point firstPoint, Point secondPoint) {
 double Point::distance(Point givenPoint) {
     return sqrt((x - givenPoint.x) * (x - givenPoint.x) + (y - givenPoint.y) * (y - givenPoint.y));
 }
+
+/**
+ * Return the midpoint of a segment.
+ */
+Point Point::getMidpoint(Point givenPoint) {
+    double midpoint_x = (x + givenPoint.x) / 2;
+    double midpoint_y = (y + givenPoint.y) / 2;
+    Point midpoint(midpoint_x, midpoint_y);
+    return midpoint;
+}
